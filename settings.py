@@ -1,5 +1,5 @@
 class Settings:
     def __init__(self):
-        self.leveys=1200
-        self.korkeus=800
+        self.leveys=1000
+        self.korkeus=600
         self.tauluväri=(230,230,230)
