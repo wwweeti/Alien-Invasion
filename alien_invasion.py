@@ -23,13 +23,13 @@ class AlienInvasion:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
-
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_a:
                     self.ship.liikkuu_vasemmalle=True
                 elif event.key==pygame.K_d:
                     self.ship.liikkuu_oikealle=True
-
+                elif event.key==pygame.K_q:
+                    sys.exit()
             elif event.type==pygame.KEYUP:
                 if event.key==pygame.K_a:
                     self.ship.liikkuu_vasemmalle=False
